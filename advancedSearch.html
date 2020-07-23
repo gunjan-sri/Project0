@@ -8,7 +8,7 @@
   </head>
   <body>
 
-    <div class="d-flex justify-content-between" style="background-color:#DDDDDD;">
+    <div class="d-flex justify-content-between" style="background-color:#F5F2F2;">
         <div class="p-2 bd-highlight">
             <a href="googleSearch.html">
                 <img src="googleLogo.png" id="logo" class="img-fluid" alt="Google Logo">
@@ -25,91 +25,61 @@
     <div class="advanced">
         Advanced Search
     </div>
+
     <hr>
 
 
 <div class="container-fluid">
 
-     <div class="row">
-       <div class="col-6">
-       </div>
-       <div class="col-6">
-       </div>
-     </div>
-
-
       <form action="https://www.google.com/search">
+
       <div class="row">
-          <div class="col-6">
-            <p style="font-size: 24px;">Find pages with...</p>
-              <label for="allThese">all these words: </label>
-                   <input type="text" class="form-control" id="allThese" name="as_q"><br>
-          </div>
-          <div class="col-6">
-            <p style="font-size:24px; color:grey;">To do this in the search box.</p>
-            <br>Type the important words:  tri-colour rat terrier
-          </div>
+        <div class="col-4"><p style="font-size: 24px;">Find pages with...</p></div>
+        <div class="col-4"></div>
+        <div class="col-4"><p style="font-size:24px; color:grey;">To do this in the search box.</p></div>
       </div>
 
 
+      <div class="row">
+          <div class="col-2">all these words:</div>
+          <div class="col-6 align-self-center"><input type="text" class="ASinput" name="as_q"><br></div>
+          <div class="col-4">Type the important words:  tri-colour rat terrier</div>
+      </div>
 
+      <div class="row">
+          <div class="col-2">this exact word or phrase:</div>
+          <div class="col-6 align-self-center"><input type="text" class="ASinput" name="as_epq"><br></div>
+          <div class="col-4">Type the important words:  tri-colour rat terrier</div>
+      </div>
 
-        <div class="row">
-          <div class="col-6">
-            <label for="thisExact">this exact word or phrase:</label>
-                 <input type="text" class="form-control" id="thisExact" name="as_epq"><br>
+      <div class="row">
+          <div class="col-2">any of these words:</div>
+          <div class="col-6 align-self-center"><input type="text" class="ASinput" name="as_oq"><br></div>
+          <div class="col-4">Type OR between all the words you want:  miniature OR standard</div>
+      </div>
+
+      <div class="row">
+          <div class="col-2">one of these words:</div>
+          <div class="col-6 align-self-center"><input type="text" class="ASinput" name="as_eq"><br></div>
+          <div class="col-4">Put a minus sign just before words that you don't want:<br> -rodent, -"Jack Russell"</div>
+      </div>
+
+      <div class="row">
+          <div class="col-2">numbers ranging from:</div>
+          <div class="col-6 align-self-center">
+              <input type="text" style="padding:5px; margin:5px; width:46%; height:30px;" name="as_nlo">
+              to
+              <input type="text" style="padding:5px; margin:5px; width:47%; height:30px;" name="as_nhi">
           </div>
-          <div class="col-6">
-            <br>Put exact words in quotes:  "rat terrier"
-          </div>
-        </div>
+          <div class="col-4">Put two full stops between the numbers and add a unit of measurement: 10..35 kg,
+              £300..£500, 2010..2011</div>
+      </div>
 
-
-
-
-        <div class="row">
-          <div class="col-6">
-              <label for="anyOf">any of these words:</label>
-                 <input type="text" class="form-control" id="anyOf" name="as_oq"><br>
-          </div>
-          <div class="col-6">
-              <br>Type OR between all the words you want:  miniature OR standard
-          </div>
-        </div>
-
-
-
-        <div class="row">
-          <div class="col-6">
-              <label for="noneOf">none of these words:</label>
-                 <input type="text" class="form-control" id="noneOf" name="as_eq"><br>
-          </div>
-          <div class="col-6">
-            <br>Put a minus sign just before words that you don't want:<br> -rodent, -"Jack Russell"
-          </div>
-        </div>
-
-
-        <div class="row">
-          <div class="col-6">
-              <label for="numberFrom">numbers ranging from:</label>
-                 <input type="text" class="form-control" id="numberFrom" name="as_nlo">
-                 to
-                 <input type="text" class="form-control" id="numberFrom" name="as_nhi">
-          </div>
-          <div class="col-6">
-            <br>Put two full stops between the numbers and add a unit of measurement: 10..35 kg,
-                £300..£500, 2010..2011
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-6">
-          </div>
-          <div class="col-6">
-            <input type="submit" class="btn btn-primary" value="Advanced Search">
-          </div>
-        </div>
+      <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4"></div>
+        <div class="col-4"><input type="submit" class="btn btn-primary" value="Advanced Search"></div>
+      </div>
 
 </div>
 
