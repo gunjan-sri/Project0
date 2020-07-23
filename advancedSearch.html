@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Advanced Search</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div class="d-flex justify-content-between" style="background-color:#DDDDDD;">
+        <div class="p-2 bd-highlight">
+            <a href="googleSearch.html">
+                <img src="googleLogo.png" id="logo" class="img-fluid" alt="Google Logo">
+            </a>
+        </div>
+        <div class="p-2 bd-highlight">
+          <a href="imageSearch.html" style="text-align:right;">
+            <p style="font-size: 24px; margin-right:20px;">Image Search</p>
+          </a>
+        </div>
+    </div>
+
+
+    <div class="advanced">
+        Advanced Search
+    </div>
+    <hr>
+
+
+<div class="container-fluid">
+
+     <div class="row">
+       <div class="col-6">
+       </div>
+       <div class="col-6">
+       </div>
+     </div>
+
+
+      <form action="https://www.google.com/search">
+      <div class="row">
+          <div class="col-6">
+            <p style="font-size: 24px;">Find pages with...</p>
+              <label for="allThese">all these words: </label>
+                   <input type="text" class="form-control" id="allThese" name="as_q"><br>
+          </div>
+          <div class="col-6">
+            <p style="font-size:24px; color:grey;">To do this in the search box.</p>
+            <br>Type the important words:  tri-colour rat terrier
+          </div>
+      </div>
+
+
+
+
+        <div class="row">
+          <div class="col-6">
+            <label for="thisExact">this exact word or phrase:</label>
+                 <input type="text" class="form-control" id="thisExact" name="as_epq"><br>
+          </div>
+          <div class="col-6">
+            <br>Put exact words in quotes:  "rat terrier"
+          </div>
+        </div>
+
+
+
+
+        <div class="row">
+          <div class="col-6">
+              <label for="anyOf">any of these words:</label>
+                 <input type="text" class="form-control" id="anyOf" name="as_oq"><br>
+          </div>
+          <div class="col-6">
+              <br>Type OR between all the words you want:  miniature OR standard
+          </div>
+        </div>
+
+
+
+        <div class="row">
+          <div class="col-6">
+              <label for="noneOf">none of these words:</label>
+                 <input type="text" class="form-control" id="noneOf" name="as_eq"><br>
+          </div>
+          <div class="col-6">
+            <br>Put a minus sign just before words that you don't want:<br> -rodent, -"Jack Russell"
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-6">
+              <label for="numberFrom">numbers ranging from:</label>
+                 <input type="text" class="form-control" id="numberFrom" name="as_nlo">
+                 to
+                 <input type="text" class="form-control" id="numberFrom" name="as_nhi">
+          </div>
+          <div class="col-6">
+            <br>Put two full stops between the numbers and add a unit of measurement: 10..35 kg,
+                £300..£500, 2010..2011
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6">
+          </div>
+          <div class="col-6">
+            <input type="submit" class="btn btn-primary" value="Advanced Search">
+          </div>
+        </div>
+
+</div>
+
+
+  </body>
+</html>
