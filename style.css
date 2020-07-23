@@ -1,5 +1,6 @@
 body {
   margin: 10px;
+  font-size: 12px;
 }
 
 #navi {
@@ -10,12 +11,23 @@ body {
   height:50px;
   width:150px;
 }
-.advanced {
-  padding: 20px;
-  margin-top: 25px;
-  margin-left: 10px;
-  color: #CD2602;
-  font-size: 24px;
+
+#containerWithLogo {
+    vertical-align: middle;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -150px;
+}
+
+#googleSearchField {
+   border-radius: 25px;
+   padding: 5px;
+   width: 350px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   box-sizing: content-box;
 }
 
 .list-group li, .list-group-horizontal li {
@@ -26,7 +38,6 @@ body {
 }
 
 .inputField {
-
   border-radius: 10px;
   padding: 5px;
   width: 350px;
@@ -34,21 +45,23 @@ body {
   margin-bottom: 20px;
   box-sizing: content-box;
 }
-}
-#inputField {
-   border-radius: 25px;
-   padding: 5px;
-   width: 350px;
-   margin-top: 20px;
-   margin-bottom: 20px;
-   box-sizing: content-box;
+
+.advanced {
+  padding: 20px;
+  margin-left: 10px;
+  color: #CD2602;
+  font-size: 24px;
 }
 
-#container {
-    vertical-align: middle;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -100px 0 0 -150px;
+.col-2, .col-4, .col-6 {
+  padding: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.ASinput {
+  padding: 5px;
+  margin: 5px;
+  width: 100%;
+  height: 30px;
 }
